@@ -14,7 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python Packages
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install pyopenssl --upgrade  # to handle error (https://stackoverflow.com/questions/73830524/attributeerror-module-lib-has-no-attribute-x509-v-flag-cb-issuer-check)
+
 
       - name: DVC Pull Data
         env:
