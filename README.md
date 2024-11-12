@@ -1,4 +1,4 @@
-### Using Service Account Method with DVC in GitHub CI/CD Pipeline
+### Using AWS S3 with DVC in GitHub CI/CD Pipeline
 
 **Content**
 
@@ -8,7 +8,7 @@
 4. [Github Actions](#github-actions)
 
 
-### Setup GC bucket storage
+### Setup AWS S3 bucket storage
 
 Note: We can create roles or policies and proceed for specific permission I didnt explore it.
 
