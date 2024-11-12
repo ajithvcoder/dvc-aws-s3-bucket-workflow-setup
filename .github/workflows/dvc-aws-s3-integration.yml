@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  dvc-gcs-workflow:
+  dvc-aws-s3-workflow:
     runs-on: ubuntu-latest
     permissions:
       contents: write
