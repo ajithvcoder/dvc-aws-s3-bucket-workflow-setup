@@ -104,7 +104,7 @@ Now you can check your AWS S3 bucket; you should see a folder named "files" like
 
 - Now push this to your GitHub repository. Note that in the .dvc folder, by default, you can only push the "config" and ".gitignore" files. Don't change this; let it remain as is.
 
-- Important: Never push the project-xxx.json file. If you do, Google will identify it and revoke the token; you'll need to set the key again.
+- Important: Never push the secrets file. If you do, AWS might identify it and revoke the token; you'll need to set the key again.
 
 - Add only .dvc/config, .gitignore, and data.dvc files.
 
@@ -121,7 +121,7 @@ Now you can check your AWS S3 bucket; you should see a folder named "files" like
 
 - You can refer to the `dvc-aws-s3-integration.yml` file for complete content. 
 
-Below is the code used to set up authentication and pull data inside GitHub CI/CD from Google Cloud Storage bucket:
+Below is the code used to set up authentication and pull data inside GitHub CI/CD from AWS S3:
 
 
 ```
